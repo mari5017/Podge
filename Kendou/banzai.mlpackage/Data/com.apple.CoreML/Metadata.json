@@ -1,0 +1,17 @@
+{
+  "MLModelVersionStringKey" : "--",
+  "MLModelDescriptionKey" : "--",
+  "MLModelCreatorDefinedKey" : {
+    "target" : "label",
+    "com.apple.coreml.model.preview.type" : "actionClassifier",
+    "classes" : "banzai,other",
+    "com.apple.createml.version" : "11.1.0",
+    "max_iterations" : "80",
+    "com.apple.createml.app.tag" : "53.1",
+    "type" : "action_classification",
+    "com.apple.createml.app.version" : "2.0",
+    "Prediction Window Size" : "60"
+  },
+  "MLModelAuthorKey" : "Sample",
+  "MLModelLicenseKey" : "--"
+}

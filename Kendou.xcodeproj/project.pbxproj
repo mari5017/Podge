@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F09359E2C154F8A007563CD /* AVCaptureDeviceOrientation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F09359D2C154F8A007563CD /* AVCaptureDeviceOrientation+Extension.swift */; };
+		1F0935A02C1551F3007563CD /* VideoOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F09359F2C1551F3007563CD /* VideoOutput.swift */; };
+		1F0935A22C27E4BC007563CD /* CGImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0935A12C27E4BB007563CD /* CGImageExtension.swift */; };
+		1F0935A42C27EF36007563CD /* PoseDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0935A32C27EF36007563CD /* PoseDetectionViewController.swift */; };
+		1F2046F52C4CAE1A00C0F282 /* banzai.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 1F2046F42C4CAE1A00C0F282 /* banzai.mlpackage */; };
+		1F53CEEA2B65FCB8007B3962 /* AlertUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F53CEE92B65FCB8007B3962 /* AlertUtil.swift */; };
+		1F53CEED2B66233C007B3962 /* VideoColletionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F53CEEB2B66233C007B3962 /* VideoColletionViewCell.swift */; };
+		1F53CEEE2B66233C007B3962 /* VideoColletionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F53CEEC2B66233C007B3962 /* VideoColletionViewCell.xib */; };
+		1F53CEF22B662564007B3962 /* VideoListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F53CEF12B662564007B3962 /* VideoListController.swift */; };
+		1F80FE222B258EA900E881A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80FE212B258EA900E881A9 /* AppDelegate.swift */; };
+		1F80FE242B258EA900E881A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80FE232B258EA900E881A9 /* SceneDelegate.swift */; };
+		1F80FE262B258EA900E881A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80FE252B258EA900E881A9 /* ViewController.swift */; };
+		1F80FE292B258EA900E881A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F80FE272B258EA900E881A9 /* Main.storyboard */; };
+		1F80FE362B25926800E881A9 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80FE352B25926800E881A9 /* PlayerView.swift */; };
+		1F80FE382B25957C00E881A9 /* AddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80FE372B25957C00E881A9 /* AddController.swift */; };
+		1F9C57282B53809000DE19E5 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9C57272B53809000DE19E5 /* FileManager.swift */; };
+		1FD43EA62C8F1EE600FCA489 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD43EA52C8F1EE600FCA489 /* VideoModel.swift */; };
+		1FD43EAB2C8F1EF400FCA489 /* RecordingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD43EA82C8F1EF400FCA489 /* RecordingService.swift */; };
+		1FD43EAD2C8F1EF400FCA489 /* SwiftDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD43EAA2C8F1EF400FCA489 /* SwiftDataService.swift */; };
+		1FD43EB42C8F1F4F00FCA489 /* YogaAction.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1FD43EB32C8F1F4F00FCA489 /* YogaAction.mlmodel */; };
+		1FD43EB62C8F2CB900FCA489 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FD43EB52C8F2CB900FCA489 /* LaunchScreen.storyboard */; };
+		1FD43EB82C8F2CD600FCA489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FD43EB72C8F2CD600FCA489 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F09359D2C154F8A007563CD /* AVCaptureDeviceOrientation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVCaptureDeviceOrientation+Extension.swift"; sourceTree = "<group>"; };
+		1F09359F2C1551F3007563CD /* VideoOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoOutput.swift; sourceTree = "<group>"; };
+		1F0935A12C27E4BB007563CD /* CGImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageExtension.swift; sourceTree = "<group>"; };
+		1F0935A32C27EF36007563CD /* PoseDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseDetectionViewController.swift; sourceTree = "<group>"; };
+		1F2046F42C4CAE1A00C0F282 /* banzai.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = banzai.mlpackage; sourceTree = "<group>"; };
+		1F53CEE92B65FCB8007B3962 /* AlertUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUtil.swift; sourceTree = "<group>"; };
+		1F53CEEB2B66233C007B3962 /* VideoColletionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoColletionViewCell.swift; sourceTree = "<group>"; };
+		1F53CEEC2B66233C007B3962 /* VideoColletionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoColletionViewCell.xib; sourceTree = "<group>"; };
+		1F53CEF12B662564007B3962 /* VideoListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListController.swift; sourceTree = "<group>"; };
+		1F80FE1E2B258EA900E881A9 /* Kendou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kendou.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F80FE212B258EA900E881A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F80FE232B258EA900E881A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1F80FE252B258EA900E881A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F80FE282B258EA900E881A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F80FE352B25926800E881A9 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		1F80FE372B25957C00E881A9 /* AddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddController.swift; sourceTree = "<group>"; };
+		1F9C57272B53809000DE19E5 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		1FD43EA52C8F1EE600FCA489 /* VideoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		1FD43EA82C8F1EF400FCA489 /* RecordingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingService.swift; sourceTree = "<group>"; };
+		1FD43EAA2C8F1EF400FCA489 /* SwiftDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDataService.swift; sourceTree = "<group>"; };
+		1FD43EB32C8F1F4F00FCA489 /* YogaAction.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YogaAction.mlmodel; sourceTree = "<group>"; };
+		1FD43EB52C8F2CB900FCA489 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1FD43EB72C8F2CD600FCA489 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FD43EB92C8F2DF800FCA489 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F80FE1B2B258EA900E881A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F80FE152B258EA900E881A9 = {
+			isa = PBXGroup;
+			children = (
+				1FD43EA72C8F1EF400FCA489 /* Service */,
+				1FD43EA42C8F1EE600FCA489 /* Model */,
+				1F80FE202B258EA900E881A9 /* Kendou */,
+				1F80FE1F2B258EA900E881A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F80FE1F2B258EA900E881A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F80FE1E2B258EA900E881A9 /* Kendou.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F80FE202B258EA900E881A9 /* Kendou */ = {
+			isa = PBXGroup;
+			children = (
+				1FD43EB32C8F1F4F00FCA489 /* YogaAction.mlmodel */,
+				1F80FE212B258EA900E881A9 /* AppDelegate.swift */,
+				1F09359D2C154F8A007563CD /* AVCaptureDeviceOrientation+Extension.swift */,
+				1F09359F2C1551F3007563CD /* VideoOutput.swift */,
+				1F80FE232B258EA900E881A9 /* SceneDelegate.swift */,
+				1F80FE252B258EA900E881A9 /* ViewController.swift */,
+				1F80FE372B25957C00E881A9 /* AddController.swift */,
+				1F53CEF12B662564007B3962 /* VideoListController.swift */,
+				1F80FE272B258EA900E881A9 /* Main.storyboard */,
+				1F0935A32C27EF36007563CD /* PoseDetectionViewController.swift */,
+				1F2046F42C4CAE1A00C0F282 /* banzai.mlpackage */,
+				1F0935A12C27E4BB007563CD /* CGImageExtension.swift */,
+				1F53CEEB2B66233C007B3962 /* VideoColletionViewCell.swift */,
+				1F9C57272B53809000DE19E5 /* FileManager.swift */,
+				1F53CEE92B65FCB8007B3962 /* AlertUtil.swift */,
+				1F53CEEC2B66233C007B3962 /* VideoColletionViewCell.xib */,
+				1F80FE352B25926800E881A9 /* PlayerView.swift */,
+				1FD43EB52C8F2CB900FCA489 /* LaunchScreen.storyboard */,
+				1FD43EB72C8F2CD600FCA489 /* Assets.xcassets */,
+				1FD43EB92C8F2DF800FCA489 /* Info.plist */,
+			);
+			path = Kendou;
+			sourceTree = "<group>";
+		};
+		1FD43EA42C8F1EE600FCA489 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1FD43EA52C8F1EE600FCA489 /* VideoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1FD43EA72C8F1EF400FCA489 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1FD43EA82C8F1EF400FCA489 /* RecordingService.swift */,
+				1FD43EAA2C8F1EF400FCA489 /* SwiftDataService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F80FE1D2B258EA900E881A9 /* Kendou */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F80FE322B258EAC00E881A9 /* Build configuration list for PBXNativeTarget "Kendou" */;
+			buildPhases = (
+				1F80FE1A2B258EA900E881A9 /* Sources */,
+				1F80FE1B2B258EA900E881A9 /* Frameworks */,
+				1F80FE1C2B258EA900E881A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kendou;
+			productName = Kendou;
+			productReference = 1F80FE1E2B258EA900E881A9 /* Kendou.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F80FE162B258EA900E881A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					1F80FE1D2B258EA900E881A9 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 1F80FE192B258EA900E881A9 /* Build configuration list for PBXProject "Kendou" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F80FE152B258EA900E881A9;
+			productRefGroup = 1F80FE1F2B258EA900E881A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F80FE1D2B258EA900E881A9 /* Kendou */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F80FE1C2B258EA900E881A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FD43EB62C8F2CB900FCA489 /* LaunchScreen.storyboard in Resources */,
+				1F80FE292B258EA900E881A9 /* Main.storyboard in Resources */,
+				1FD43EB82C8F2CD600FCA489 /* Assets.xcassets in Resources */,
+				1F53CEEE2B66233C007B3962 /* VideoColletionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F80FE1A2B258EA900E881A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F0935A02C1551F3007563CD /* VideoOutput.swift in Sources */,
+				1FD43EAD2C8F1EF400FCA489 /* SwiftDataService.swift in Sources */,
+				1F2046F52C4CAE1A00C0F282 /* banzai.mlpackage in Sources */,
+				1FD43EAB2C8F1EF400FCA489 /* RecordingService.swift in Sources */,
+				1F0935A22C27E4BC007563CD /* CGImageExtension.swift in Sources */,
+				1F53CEED2B66233C007B3962 /* VideoColletionViewCell.swift in Sources */,
+				1F0935A42C27EF36007563CD /* PoseDetectionViewController.swift in Sources */,
+				1F09359E2C154F8A007563CD /* AVCaptureDeviceOrientation+Extension.swift in Sources */,
+				1FD43EA62C8F1EE600FCA489 /* VideoModel.swift in Sources */,
+				1F80FE382B25957C00E881A9 /* AddController.swift in Sources */,
+				1F80FE262B258EA900E881A9 /* ViewController.swift in Sources */,
+				1F80FE222B258EA900E881A9 /* AppDelegate.swift in Sources */,
+				1FD43EB42C8F1F4F00FCA489 /* YogaAction.mlmodel in Sources */,
+				1F9C57282B53809000DE19E5 /* FileManager.swift in Sources */,
+				1F53CEF22B662564007B3962 /* VideoListController.swift in Sources */,
+				1F80FE242B258EA900E881A9 /* SceneDelegate.swift in Sources */,
+				1F53CEEA2B65FCB8007B3962 /* AlertUtil.swift in Sources */,
+				1F80FE362B25926800E881A9 /* PlayerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1F80FE272B258EA900E881A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F80FE282B258EA900E881A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F80FE302B258EAC00E881A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F80FE312B258EAC00E881A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F80FE332B258EAC00E881A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7398XZR36X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kendou/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "ポーズ判定";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.fujihira.marina.Kendou;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F80FE342B258EAC00E881A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7398XZR36X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kendou/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "ポーズ判定";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.fujihira.marina.Kendou;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F80FE192B258EA900E881A9 /* Build configuration list for PBXProject "Kendou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F80FE302B258EAC00E881A9 /* Debug */,
+				1F80FE312B258EAC00E881A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F80FE322B258EAC00E881A9 /* Build configuration list for PBXNativeTarget "Kendou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F80FE332B258EAC00E881A9 /* Debug */,
+				1F80FE342B258EAC00E881A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F80FE162B258EA900E881A9 /* Project object */;
+}
