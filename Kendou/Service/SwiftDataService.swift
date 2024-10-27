@@ -10,18 +10,18 @@ import SwiftData
 
 //MARK: CRUD OPERATION
 @available(iOS 17, *)
-class SwiftDataService{
+class SwiftDataService {
     static let shared = SwiftDataService()
     var container: ModelContainer?
     var context: ModelContext?
     
-    init(){
-        do{
+    init() {
+        do {
             container = try ModelContainer(for: VideoModel.self)
             if let container{
                 context = ModelContext(container)
             }
-        }catch{
+        } catch {
             
         }
     }
