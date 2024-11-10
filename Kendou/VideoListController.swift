@@ -9,6 +9,7 @@ import UIKit
 import SwiftData
 import AVFoundation
 import AVKit
+import SwiftUI
 @available(iOS 17,*)
 class VideoListController: UIViewController{
     
@@ -29,12 +30,15 @@ class VideoListController: UIViewController{
     private func configureCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(UINib(nibName: "VideoColletionViewCell", bundle: nil),forCellWithReuseIdentifier: "videoCell")
+        
         //レイアウトを調整
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
+        layout.itemSize = CGSize(width: 380, height: 100)
+        layout.sectionInset = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
         collectionView.collectionViewLayout = layout
     }
+   
     //データの取得のためのコード
     func fetchData() {
         SwiftDataService.shared.fetchVideo { data, error in
@@ -80,19 +84,12 @@ extension VideoListController: UICollectionViewDelegate, UICollectionViewDataSou
         return videos.count
     }
     //MARK　セルのアウト決めと表示をする
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) ->
-    UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "videoCell", for: indexPath) as! VideoColletionViewCell
-        cell.label.text = videos[indexPath.row] .title
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
         let image = convertToImage(Path: videos[indexPath.row].title)
-        if let image{
-            cell.imageView.image = image
-        }
-        cell.layer.cornerRadius = 8
-        cell.layer.shadowColor = UIColor.black.cgColor
-        cell.layer.shadowOffset = CGSize(width: 1, height: 1)
-        cell.layer.shadowOpacity = 0.3
-        cell.layer.masksToBounds = false
+        
+        cell.contentConfiguration = UIHostingConfiguration(content: { MovieListCell(videoName: videos[indexPath.row].title, image: image)
+        })
         return cell
     }
     //MARK: セルの大きさを決める
@@ -107,5 +104,5 @@ extension VideoListController: UICollectionViewDelegate, UICollectionViewDataSou
             self.playMovie(at: videoUrl)
         }
     }
-    
+   
 }
