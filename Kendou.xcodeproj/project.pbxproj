@@ -32,6 +32,9 @@
 		1FD43EC02CE04CAF00FCA489 /* SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD43EBF2CE04CAF00FCA489 /* SwiftUI.swift */; };
 		1FD43EC42CE05EB300FCA489 /* PoseListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD43EC32CE05EB300FCA489 /* PoseListCell.swift */; };
 		1FD43EC62CE075A900FCA489 /* PoseGachaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD43EC52CE075A900FCA489 /* PoseGachaViewController.swift */; };
+		1FD43ED52CEB7A1700FCA489 /* OK.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FD43ED42CEB7A1700FCA489 /* OK.mp3 */; };
+		1FD43ED92CECB84400FCA489 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD43ED82CECB84400FCA489 /* FlowLayout.swift */; };
+		1FD43EDB2CECC07D00FCA489 /* RecordingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD43EDA2CECC07D00FCA489 /* RecordingService.swift */; };
 		1FDA4D7B2C5DF25100EDAEBF /* RecordingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA4D7A2C5DF25100EDAEBF /* RecordingService.swift */; };
 		2CA730EA2C8E0E6100E818C7 /* YogaAction.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2CA730E92C8E0E6100E818C7 /* YogaAction.mlmodel */; };
 /* End PBXBuildFile section */
@@ -64,6 +67,9 @@
 		1FD43EBF2CE04CAF00FCA489 /* SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI.swift; sourceTree = "<group>"; };
 		1FD43EC32CE05EB300FCA489 /* PoseListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseListCell.swift; sourceTree = "<group>"; };
 		1FD43EC52CE075A900FCA489 /* PoseGachaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseGachaViewController.swift; sourceTree = "<group>"; };
+		1FD43ED42CEB7A1700FCA489 /* OK.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OK.mp3; sourceTree = "<group>"; };
+		1FD43ED82CECB84400FCA489 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
+		1FD43EDA2CECC07D00FCA489 /* RecordingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingService.swift; sourceTree = "<group>"; };
 		1FDA4D7A2C5DF25100EDAEBF /* RecordingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingService.swift; sourceTree = "<group>"; };
 		2CA730E92C8E0E6100E818C7 /* YogaAction.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YogaAction.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +88,7 @@
 		1F80FE152B258EA900E881A9 = {
 			isa = PBXGroup;
 			children = (
+				1FD43ED42CEB7A1700FCA489 /* OK.mp3 */,
 				1FD43EC12CE04DFF00FCA489 /* Design */,
 				1F80FE202B258EA900E881A9 /* Kendou */,
 				1F80FE1F2B258EA900E881A9 /* Products */,
@@ -114,6 +121,7 @@
 				1FD43EBB2CCE17BF00FCA489 /* Random.swift */,
 				1FD43EBD2CCE180700FCA489 /* Result.swift */,
 				1F0935A32C27EF36007563CD /* PoseDetectionViewController.swift */,
+				1FD43EDA2CECC07D00FCA489 /* RecordingService.swift */,
 				2CA730E92C8E0E6100E818C7 /* YogaAction.mlmodel */,
 				1F2046F42C4CAE1A00C0F282 /* banzai.mlpackage */,
 				1F53CEEB2B66233C007B3962 /* VideoColletionViewCell.swift */,
@@ -139,6 +147,7 @@
 			children = (
 				1FD43EBF2CE04CAF00FCA489 /* SwiftUI.swift */,
 				1FD43EC32CE05EB300FCA489 /* PoseListCell.swift */,
+				1FD43ED82CECB84400FCA489 /* FlowLayout.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -236,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD43ED52CEB7A1700FCA489 /* OK.mp3 in Resources */,
 				1F80FE2E2B258EAC00E881A9 /* LaunchScreen.storyboard in Resources */,
 				1F80FE2B2B258EAC00E881A9 /* Assets.xcassets in Resources */,
 				1F80FE292B258EA900E881A9 /* Main.storyboard in Resources */,
@@ -251,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F0935A02C1551F3007563CD /* VideoOutput.swift in Sources */,
+				1FD43ED92CECB84400FCA489 /* FlowLayout.swift in Sources */,
 				1F2046F52C4CAE1A00C0F282 /* banzai.mlpackage in Sources */,
 				1FD43EC42CE05EB300FCA489 /* PoseListCell.swift in Sources */,
 				1F0935A22C27E4BC007563CD /* CGImageExtension.swift in Sources */,
@@ -266,6 +277,7 @@
 				1F80FE222B258EA900E881A9 /* AppDelegate.swift in Sources */,
 				1F9C57282B53809000DE19E5 /* FileManager.swift in Sources */,
 				1FD43EC62CE075A900FCA489 /* PoseGachaViewController.swift in Sources */,
+				1FD43EDB2CECC07D00FCA489 /* RecordingService.swift in Sources */,
 				1F53CEF22B662564007B3962 /* VideoListController.swift in Sources */,
 				1FD43EC02CE04CAF00FCA489 /* SwiftUI.swift in Sources */,
 				1F53CEE82B65E597007B3962 /* SwiftDataService.swift in Sources */,

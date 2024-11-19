@@ -6,3 +6,23 @@
 //
 
 import Foundation
+import AVFoundation
+
+class SoundService {
+    static func shared = SoundService()
+    
+    var audioPlayer: AVAudioPlayer?
+    
+    func playSound(filename: String, filetype: String) {
+        if let path = Bundle.main.path(forResource: filename, ofType: filetype){
+            let url = URL(fileURLWithPath: path)
+            do{
+                audioPlayer = try AVAudioPlayer(contentsOf:url)
+                audioPlayer?.play()
+            }catch{
+                print("音楽ファイルの再生に失敗しました")
+            }
+        }
+            
+    }
+}
