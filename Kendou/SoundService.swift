@@ -9,7 +9,7 @@ import Foundation
 import AVFoundation
 
 class SoundService {
-    static func shared = SoundService()
+    static let shared = SoundService()
     
     var audioPlayer: AVAudioPlayer?
     
