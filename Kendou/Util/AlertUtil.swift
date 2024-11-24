@@ -18,6 +18,21 @@ struct AlertDialog {
         viewController.present(alert, animated: true, completion: nil)
     }
     
+    public func showSingleSheet(title: String, message: String, viewController: UIViewController, completion: @escaping() -> Void) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
+        let ok = UIAlertAction(title: "OK", style: .default) { (action) in completion()
+        }
+        let cancelAction: UIAlertAction = UIAlertAction(title: "キャンセル", style: .default, handler: {
+            //ボタンが押された時の処理
+            (action: UIAlertAction) -> Void in
+            print("キャンセル")
+        })
+        alert.addAction(ok)
+        alert.addAction(cancelAction)
+        //TODO: parent → present
+        viewController.present(alert, animated: true, completion: nil)
+    }
+    
     public func showSaveWithTextAlert(vc: UIViewController, completion: @escaping( _ text: String)->Void){
         let avc = UIAlertController(title: "Save", message: "put a name to the video",preferredStyle: .alert)
         avc.addTextField()

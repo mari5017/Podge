@@ -17,21 +17,25 @@ struct MovieListCell: View {
             BCView()
             
             HStack{
-                if let image{
-                    Image(uiImage: image)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(maxWidth: 144,maxHeight: 72)
-                        .padding(.leading,32)
-                    
-                    Spacer()
-                    
-                    Text(videoName)
-                        .padding(.trailing,48)
+                HStack {
+                    if let image {
+                        Image(uiImage: image)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(maxWidth: 144, maxHeight: 72)
+                            .padding(.leading,36)
+                        
+                        Text(videoName)
+                            .padding()
+                        
+                       Spacer()
+                    }
                 }
             }
         }
     }
+    
+    
     @ViewBuilder
     func BCView() -> some View{
         RoundedRectangle(cornerRadius: 25)

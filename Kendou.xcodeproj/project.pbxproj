@@ -27,14 +27,12 @@
 		1F80FE362B25926800E881A9 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80FE352B25926800E881A9 /* PlayerView.swift */; };
 		1F80FE382B25957C00E881A9 /* AddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80FE372B25957C00E881A9 /* AddController.swift */; };
 		1F9C57282B53809000DE19E5 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9C57272B53809000DE19E5 /* FileManager.swift */; };
-		1FD43EBC2CCE17BF00FCA489 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD43EBB2CCE17BF00FCA489 /* Random.swift */; };
-		1FD43EBE2CCE180700FCA489 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD43EBD2CCE180700FCA489 /* Result.swift */; };
-		1FD43EC02CE04CAF00FCA489 /* SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD43EBF2CE04CAF00FCA489 /* SwiftUI.swift */; };
+		1FD43EC02CE04CAF00FCA489 /* MovieListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD43EBF2CE04CAF00FCA489 /* MovieListCell.swift */; };
 		1FD43EC42CE05EB300FCA489 /* PoseListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD43EC32CE05EB300FCA489 /* PoseListCell.swift */; };
 		1FD43EC62CE075A900FCA489 /* PoseGachaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD43EC52CE075A900FCA489 /* PoseGachaViewController.swift */; };
 		1FD43ED52CEB7A1700FCA489 /* OK.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FD43ED42CEB7A1700FCA489 /* OK.mp3 */; };
 		1FD43ED92CECB84400FCA489 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD43ED82CECB84400FCA489 /* FlowLayout.swift */; };
-		1FD43EDB2CECC07D00FCA489 /* RecordingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD43EDA2CECC07D00FCA489 /* RecordingService.swift */; };
+		1FD43EDB2CECC07D00FCA489 /* SoundService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD43EDA2CECC07D00FCA489 /* SoundService.swift */; };
 		1FDA4D7B2C5DF25100EDAEBF /* RecordingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA4D7A2C5DF25100EDAEBF /* RecordingService.swift */; };
 		2CA730EA2C8E0E6100E818C7 /* YogaAction.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2CA730E92C8E0E6100E818C7 /* YogaAction.mlmodel */; };
 /* End PBXBuildFile section */
@@ -62,14 +60,12 @@
 		1F80FE352B25926800E881A9 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		1F80FE372B25957C00E881A9 /* AddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddController.swift; sourceTree = "<group>"; };
 		1F9C57272B53809000DE19E5 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
-		1FD43EBB2CCE17BF00FCA489 /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
-		1FD43EBD2CCE180700FCA489 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		1FD43EBF2CE04CAF00FCA489 /* SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI.swift; sourceTree = "<group>"; };
+		1FD43EBF2CE04CAF00FCA489 /* MovieListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCell.swift; sourceTree = "<group>"; };
 		1FD43EC32CE05EB300FCA489 /* PoseListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseListCell.swift; sourceTree = "<group>"; };
 		1FD43EC52CE075A900FCA489 /* PoseGachaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseGachaViewController.swift; sourceTree = "<group>"; };
 		1FD43ED42CEB7A1700FCA489 /* OK.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = OK.mp3; sourceTree = "<group>"; };
 		1FD43ED82CECB84400FCA489 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
-		1FD43EDA2CECC07D00FCA489 /* RecordingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingService.swift; sourceTree = "<group>"; };
+		1FD43EDA2CECC07D00FCA489 /* SoundService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundService.swift; sourceTree = "<group>"; };
 		1FDA4D7A2C5DF25100EDAEBF /* RecordingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingService.swift; sourceTree = "<group>"; };
 		2CA730E92C8E0E6100E818C7 /* YogaAction.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YogaAction.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,8 +84,6 @@
 		1F80FE152B258EA900E881A9 = {
 			isa = PBXGroup;
 			children = (
-				1FD43ED42CEB7A1700FCA489 /* OK.mp3 */,
-				1FD43EC12CE04DFF00FCA489 /* Design */,
 				1F80FE202B258EA900E881A9 /* Kendou */,
 				1F80FE1F2B258EA900E881A9 /* Products */,
 			);
@@ -106,6 +100,8 @@
 		1F80FE202B258EA900E881A9 /* Kendou */ = {
 			isa = PBXGroup;
 			children = (
+				1FD43ED42CEB7A1700FCA489 /* OK.mp3 */,
+				1FD43EC12CE04DFF00FCA489 /* Design */,
 				2CA730EB2C8E127200E818C7 /* Extension */,
 				2CA730E62C8C8E2E00E818C7 /* Service */,
 				2CA730E52C8C8E2300E818C7 /* Util */,
@@ -118,10 +114,8 @@
 				1FD43EC52CE075A900FCA489 /* PoseGachaViewController.swift */,
 				1F53CEF12B662564007B3962 /* VideoListController.swift */,
 				1F80FE272B258EA900E881A9 /* Main.storyboard */,
-				1FD43EBB2CCE17BF00FCA489 /* Random.swift */,
-				1FD43EBD2CCE180700FCA489 /* Result.swift */,
 				1F0935A32C27EF36007563CD /* PoseDetectionViewController.swift */,
-				1FD43EDA2CECC07D00FCA489 /* RecordingService.swift */,
+				1FD43EDA2CECC07D00FCA489 /* SoundService.swift */,
 				2CA730E92C8E0E6100E818C7 /* YogaAction.mlmodel */,
 				1F2046F42C4CAE1A00C0F282 /* banzai.mlpackage */,
 				1F53CEEB2B66233C007B3962 /* VideoColletionViewCell.swift */,
@@ -145,7 +139,7 @@
 		1FD43EC22CE04E1900FCA489 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				1FD43EBF2CE04CAF00FCA489 /* SwiftUI.swift */,
+				1FD43EBF2CE04CAF00FCA489 /* MovieListCell.swift */,
 				1FD43EC32CE05EB300FCA489 /* PoseListCell.swift */,
 				1FD43ED82CECB84400FCA489 /* FlowLayout.swift */,
 			);
@@ -268,7 +262,6 @@
 				1FDA4D7B2C5DF25100EDAEBF /* RecordingService.swift in Sources */,
 				2CA730EA2C8E0E6100E818C7 /* YogaAction.mlmodel in Sources */,
 				1F53CEED2B66233C007B3962 /* VideoColletionViewCell.swift in Sources */,
-				1FD43EBE2CCE180700FCA489 /* Result.swift in Sources */,
 				1F0935A42C27EF36007563CD /* PoseDetectionViewController.swift in Sources */,
 				1F09359E2C154F8A007563CD /* AVCaptureDeviceOrientation+Extension.swift in Sources */,
 				1F80FE382B25957C00E881A9 /* AddController.swift in Sources */,
@@ -277,12 +270,11 @@
 				1F80FE222B258EA900E881A9 /* AppDelegate.swift in Sources */,
 				1F9C57282B53809000DE19E5 /* FileManager.swift in Sources */,
 				1FD43EC62CE075A900FCA489 /* PoseGachaViewController.swift in Sources */,
-				1FD43EDB2CECC07D00FCA489 /* RecordingService.swift in Sources */,
+				1FD43EDB2CECC07D00FCA489 /* SoundService.swift in Sources */,
 				1F53CEF22B662564007B3962 /* VideoListController.swift in Sources */,
-				1FD43EC02CE04CAF00FCA489 /* SwiftUI.swift in Sources */,
+				1FD43EC02CE04CAF00FCA489 /* MovieListCell.swift in Sources */,
 				1F53CEE82B65E597007B3962 /* SwiftDataService.swift in Sources */,
 				1F80FE242B258EA900E881A9 /* SceneDelegate.swift in Sources */,
-				1FD43EBC2CCE17BF00FCA489 /* Random.swift in Sources */,
 				1F53CEEA2B65FCB8007B3962 /* AlertUtil.swift in Sources */,
 				1F80FE362B25926800E881A9 /* PlayerView.swift in Sources */,
 			);
@@ -431,7 +423,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = VYY6NT3X7Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Kendou/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Podge;
@@ -462,7 +454,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = VYY6NT3X7Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Kendou/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Podge;

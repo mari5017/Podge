@@ -64,15 +64,14 @@ class VideoListController: UIViewController{
     }
     //TODO: 動画の再生
     private func playMovie(at url: URL){
-      //AVPlayerのセットアップ
-        let player = AVPlayer(url: url)
-        //AVPlayerViewControllerのセットアップ
-        let playerViewController = AVPlayerViewController()
-        playerViewController.player = player
-        //AVPlayerViewControllerを表示、動画再生
-        present(playerViewController,animated: true) {
-            playerViewController.player?.play()
-        }
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+          let nextVC = storyboard.instantiateViewController(withIdentifier: "AddVC")as! AddController
+          nextVC.movieURL = url
+          let asset = AVAsset(url: url)
+          nextVC.itemDuration = CMTimeGetSeconds(asset.duration)
+          let item = AVPlayerItem(url: url)
+          nextVC.player.replaceCurrentItem(with: item)
+          self.present(nextVC, animated: true)
     }
     
     
@@ -91,12 +90,6 @@ extension VideoListController: UICollectionViewDelegate, UICollectionViewDataSou
         cell.contentConfiguration = UIHostingConfiguration(content: { MovieListCell(videoName: videos[indexPath.row].title, image: image)
         })
         return cell
-    }
-    //MARK: セルの大きさを決める
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout , sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let horizontalSpace : CGFloat = 40
-        let cellSize : CGFloat = self.view.bounds.width - horizontalSpace
-        return CGSize(width: cellSize, height: cellSize/3)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

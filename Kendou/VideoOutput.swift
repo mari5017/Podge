@@ -29,7 +29,7 @@ class VideoCapture: NSObject {
     //動画出力に関するもの
     let videoOutput = AVCaptureVideoDataOutput()
     //カメラのポジション
-    private(set) var cameraPosition = AVCaptureDevice.Position.front
+    private(set) var cameraPosition = AVCaptureDevice.Position.back
     //キュー、スレッドに関して
     private let sessionQueue = DispatchQueue(label: "io.al03.pose-estimation-session-queue")
     

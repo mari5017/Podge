@@ -98,7 +98,7 @@ class FileManagerService {
             try! compositionVideoTrack.insertTimeRange(CMTimeRangeMake(start: CMTime.zero, duration: try await avAsset.load(.duration)), of: videoTrack, at: CMTime.zero)
             try! compositionAudioTrack?.insertTimeRange(CMTimeRangeMake(start: CMTime.zero, duration: try await avAsset.load(.duration)), of: audioTrack!, at: CMTime.zero)
             //エクスポートするためのセッションを作成
-            let assetExport = AVAssetExportSession.init(asset: mainComposition, presetName: AVAssetExportPresetMediumQuality)
+            let assetExport = AVAssetExportSession.init(asset: mainComposition, presetName: AVAssetExportPresetHighestQuality)
             //エクスポートするファイルの種類を設定
             assetExport?.outputFileType = fileType
             //エクスポート先URLを設定
