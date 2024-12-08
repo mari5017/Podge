@@ -93,8 +93,13 @@ extension VideoListController: UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if let videoUrl = FileManagerService.shared.getFileUrl(fileName: videos[indexPath.row].videoPath){
-            self.playMovie(at: videoUrl)
+        AlertDialog.shared.showDoubleAlert(title: "選択", message: "アクションを選んでください", viewController: self) {
+            if let videoUrl = FileManagerService.shared.getFileUrl(fileName: self.videos[indexPath.row].videoPath){
+                self.playMovie(at: videoUrl)
+            }
+        }secondCompletion: {
+            SwiftDataService.shared.deleteVideo(videoModel: self.videos[indexPath.row])
+            self.collectionView.reloadData()
         }
     }
    

@@ -423,11 +423,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VYY6NT3X7Q;
+				DEVELOPMENT_TEAM = 7398XZR36X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Kendou/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Podge;
-				INFOPLIST_KEY_NSCameraUsageDescription = "ポーズ判定";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "録画します";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -439,7 +439,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.fujihira.marina.Kendou;
+				PRODUCT_BUNDLE_IDENTIFIER = app.fujihira.marina.Kendou.podge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -454,11 +454,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VYY6NT3X7Q;
+				DEVELOPMENT_TEAM = 7398XZR36X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Kendou/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Podge;
-				INFOPLIST_KEY_NSCameraUsageDescription = "ポーズ判定";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "録画します";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -470,7 +470,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.fujihira.marina.Kendou;
+				PRODUCT_BUNDLE_IDENTIFIER = app.fujihira.marina.Kendou.podge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

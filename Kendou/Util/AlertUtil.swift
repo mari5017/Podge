@@ -43,4 +43,13 @@ struct AlertDialog {
         }))
         vc.present(avc, animated: true, completion: nil)
     }
+    public func showDoubleAlert(title: String,message: String,viewController: UIViewController,firstCompletion: @escaping() -> Void, secondCompletion: @escaping() -> Void) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let replay = UIAlertAction(title: "動画再生", style: .default) {(action) in firstCompletion()}
+        let delet = UIAlertAction(title: "削除", style: .destructive, handler: {(action: UIAlertAction) -> Void in
+            print("destructive")
+        })
+        alert.addAction(replay)
+        alert.addAction(delet)
+    }
 }

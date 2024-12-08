@@ -177,5 +177,6 @@ extension VideoCapture: AVCaptureVideoDataOutputSampleBufferDelegate {
             }
         }
     }
+    
 }
 
