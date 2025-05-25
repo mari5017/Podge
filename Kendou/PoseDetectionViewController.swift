@@ -174,8 +174,7 @@ class PoseDetectionViewController: UIViewController {
                     DispatchQueue.main.async {
                         let preTVC = self.presentingViewController as! UITabBarController
                         let preVC = preTVC.selectedViewController as! PoseGachaViewController
-                        preVC.percentage = percentage
-                        
+                        preVC.percentage = percentage   //これがスコアだよ！
                         self.dismiss(animated: true)
                     }
                 }

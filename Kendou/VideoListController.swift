@@ -1,10 +1,3 @@
-//
-//  VideoListController.swift
-//  Kendou
-//
-//  Created by 藤平真里奈 on 2024/01/28.
-//
-
 import UIKit
 import SwiftData
 import AVFoundation

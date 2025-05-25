@@ -8,13 +8,17 @@
 import UIKit
 
 class PlayerViewController: UIViewController {
-
+    var scoreLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func backButton(_ sender: UIButton) {
+        self.dismiss(animated: true,completion: nil)
+    }
 
     /*
     // MARK: - Navigation

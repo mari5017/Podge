@@ -17,14 +17,16 @@ final class VideoModel{
     var title: String
     var memo: String
     var createdAt: Date
+    var score: Double
     
-    init(id: String, videoPath: String, imagePath: String,title:String, createdAt: Date, memo:String){
+    init(id: String, videoPath: String, imagePath: String,title:String, createdAt: Date, memo:String, score: Double){
         self.id = id
         self.videoPath = videoPath
         self.imagePath = imagePath
         self.title = title
         self.createdAt = createdAt
         self.memo = memo
+        self.score = score
     }
 }
 

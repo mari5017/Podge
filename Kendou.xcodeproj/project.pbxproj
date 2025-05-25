@@ -27,6 +27,8 @@
 		1F80FE362B25926800E881A9 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80FE352B25926800E881A9 /* PlayerView.swift */; };
 		1F80FE382B25957C00E881A9 /* AddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80FE372B25957C00E881A9 /* AddController.swift */; };
 		1F9C57282B53809000DE19E5 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9C57272B53809000DE19E5 /* FileManager.swift */; };
+		1F9DF03D2DE2DFB800055B29 /* playerview2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9DF03C2DE2DFB800055B29 /* playerview2.swift */; };
+		1F9DF03F2DE2E9D100055B29 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9DF03E2DE2E9D100055B29 /* PlayerViewController.swift */; };
 		1FD43EC02CE04CAF00FCA489 /* MovieListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD43EBF2CE04CAF00FCA489 /* MovieListCell.swift */; };
 		1FD43EC42CE05EB300FCA489 /* PoseListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD43EC32CE05EB300FCA489 /* PoseListCell.swift */; };
 		1FD43EC62CE075A900FCA489 /* PoseGachaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD43EC52CE075A900FCA489 /* PoseGachaViewController.swift */; };
@@ -60,6 +62,8 @@
 		1F80FE352B25926800E881A9 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		1F80FE372B25957C00E881A9 /* AddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddController.swift; sourceTree = "<group>"; };
 		1F9C57272B53809000DE19E5 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		1F9DF03C2DE2DFB800055B29 /* playerview2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playerview2.swift; sourceTree = "<group>"; };
+		1F9DF03E2DE2E9D100055B29 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		1FD43EBF2CE04CAF00FCA489 /* MovieListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCell.swift; sourceTree = "<group>"; };
 		1FD43EC32CE05EB300FCA489 /* PoseListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseListCell.swift; sourceTree = "<group>"; };
 		1FD43EC52CE075A900FCA489 /* PoseGachaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseGachaViewController.swift; sourceTree = "<group>"; };
@@ -114,13 +118,15 @@
 				1FD43EC52CE075A900FCA489 /* PoseGachaViewController.swift */,
 				1F53CEF12B662564007B3962 /* VideoListController.swift */,
 				1F80FE272B258EA900E881A9 /* Main.storyboard */,
+				1F9DF03C2DE2DFB800055B29 /* playerview2.swift */,
+				1F9DF03E2DE2E9D100055B29 /* PlayerViewController.swift */,
+				1F80FE352B25926800E881A9 /* PlayerView.swift */,
 				1F0935A32C27EF36007563CD /* PoseDetectionViewController.swift */,
 				1FD43EDA2CECC07D00FCA489 /* SoundService.swift */,
 				2CA730E92C8E0E6100E818C7 /* YogaAction.mlmodel */,
 				1F2046F42C4CAE1A00C0F282 /* banzai.mlpackage */,
 				1F53CEEB2B66233C007B3962 /* VideoColletionViewCell.swift */,
 				1F53CEEC2B66233C007B3962 /* VideoColletionViewCell.xib */,
-				1F80FE352B25926800E881A9 /* PlayerView.swift */,
 				1F80FE2A2B258EAC00E881A9 /* Assets.xcassets */,
 				1F80FE2C2B258EAC00E881A9 /* LaunchScreen.storyboard */,
 				1F80FE2F2B258EAC00E881A9 /* Info.plist */,
@@ -260,6 +266,7 @@
 				1FD43EC42CE05EB300FCA489 /* PoseListCell.swift in Sources */,
 				1F0935A22C27E4BC007563CD /* CGImageExtension.swift in Sources */,
 				1FDA4D7B2C5DF25100EDAEBF /* RecordingService.swift in Sources */,
+				1F9DF03D2DE2DFB800055B29 /* playerview2.swift in Sources */,
 				2CA730EA2C8E0E6100E818C7 /* YogaAction.mlmodel in Sources */,
 				1F53CEED2B66233C007B3962 /* VideoColletionViewCell.swift in Sources */,
 				1F0935A42C27EF36007563CD /* PoseDetectionViewController.swift in Sources */,
@@ -267,6 +274,7 @@
 				1F80FE382B25957C00E881A9 /* AddController.swift in Sources */,
 				1F80FE262B258EA900E881A9 /* ViewController.swift in Sources */,
 				1F53CEE62B65DB2F007B3962 /* VideoModel.swift in Sources */,
+				1F9DF03F2DE2E9D100055B29 /* PlayerViewController.swift in Sources */,
 				1F80FE222B258EA900E881A9 /* AppDelegate.swift in Sources */,
 				1F9C57282B53809000DE19E5 /* FileManager.swift in Sources */,
 				1FD43EC62CE075A900FCA489 /* PoseGachaViewController.swift in Sources */,
@@ -428,7 +436,7 @@
 				INFOPLIST_FILE = Kendou/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Podge;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "録画します";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "このアプリでは、ポーズを測定するためにカメラを使用します。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -463,7 +471,7 @@
 				INFOPLIST_FILE = Kendou/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Podge;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "録画します";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "このアプリでは、ポーズを測定するためにカメラを使用します。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

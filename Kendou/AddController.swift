@@ -153,7 +153,7 @@ extension AddController: UIImagePickerControllerDelegate, UINavigationController
             let imagePath = myAppDirectory.appending(path: "text")
             
             //タイトルなどを諸々保存する
-            SwiftDataService.shared.saveVideo(videoPath: self.movieURL.lastPathComponent,imagePath: imagePath.lastPathComponent,title: text)
+            SwiftDataService.shared.saveVideo(videoPath: self.movieURL.lastPathComponent,imagePath: imagePath.lastPathComponent, title: "")
             //いったんコメントアウト: self.getPreviousController()
             self.getPreviousCotroller()
         }

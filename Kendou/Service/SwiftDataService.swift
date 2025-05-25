@@ -28,7 +28,7 @@ class SwiftDataService {
     //MARK: 動画を保存
     func saveVideo(videoPath: String, imagePath: String, title: String) {
         if let context{
-            let savedVideo = VideoModel(id: UUID().uuidString, videoPath: videoPath, imagePath: imagePath, title: title,createdAt: Date(),memo: "")
+            let savedVideo = VideoModel(id: UUID().uuidString, videoPath: videoPath, imagePath: imagePath, title: title,createdAt: Date(),memo: "", score: Double())
             context.insert(savedVideo)
         }
     }
@@ -55,4 +55,11 @@ class SwiftDataService {
             context.delete(videoModel)
         }
     }
+    
+    //MARK: スコアを保存
+//    func saveScore(videoPath: String, score: Double) {
+//        if let context {
+//            let saveScore = 
+//        }
+//    }
 }
