@@ -27,7 +27,7 @@ enum PosePattern: String {
     case WarriorPose2 = "WarriorPose2"
     case none = "none"
 }
-
+@available(iOS 17, *)
 class PoseGachaViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -156,7 +156,7 @@ class PoseGachaViewController: UIViewController {
         }
     }
 }
-
+@available(iOS 17, *)
 extension PoseGachaViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return poseArray.count * 3
@@ -171,7 +171,7 @@ extension PoseGachaViewController: UICollectionViewDataSource, UICollectionViewD
         return cell
     }
 }
-
+@available(iOS 17, *)
 extension PoseGachaViewController: UIScrollViewDelegate {
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
@@ -186,7 +186,7 @@ extension PoseGachaViewController: UIScrollViewDelegate {
         }
     }
 }
-
+@available(iOS 17, *)
 extension PoseGachaViewController: UICollectionViewDelegateFlowLayout {
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         let collectionView = scrollView as! UICollectionView

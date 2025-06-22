@@ -8,6 +8,7 @@
 import UIKit
 import Vision
 import ReplayKit
+@available(iOS 17, *)
 //TODO: PoseDetectionViewControllerの中に書く
 class PoseDetectionViewController: UIViewController {
     let screenRecorder = RecordingService.shared
@@ -175,7 +176,14 @@ class PoseDetectionViewController: UIViewController {
                         let preTVC = self.presentingViewController as! UITabBarController
                         let preVC = preTVC.selectedViewController as! PoseGachaViewController
                         preVC.percentage = percentage   //これがスコアだよ！
-                        self.dismiss(animated: true)
+                        //ここで、前の画面に戻っている
+                        //self.dismiss(animated: true)
+                        //これを次の画面に遷移する
+//                        let storyboard: UIStoryboard = self.storyboard!
+//                        let nextView = storyboard.instantiateViewController(withIdentifier: "View") as! PlayerViewController
+//                        self.present(nextView,animated: true ,completion: nil)
+                        let playerViewController = self.storyboard?.instantiateViewController(withIdentifier: "View") as! PlayerViewController
+                        self.present(playerViewController,animated: true,completion: nil)
                     }
                 }
                 
@@ -191,6 +199,7 @@ class PoseDetectionViewController: UIViewController {
 }
 // MARK: - VideoCaptureDelegate
 //Videoをキャプチャしたら推定する！
+@available(iOS 17, *)
 extension PoseDetectionViewController: VideoCaptureDelegate {
     func videoCapture(_videoCapture: VideoCapture, didCaptureFrame capturedImage: CGImage?) {
         guard let image = capturedImage else {

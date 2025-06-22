@@ -183,13 +183,13 @@
         <!--Player View Controller-->
         <scene sceneID="50V-Zm-JU9">
             <objects>
-                <viewController id="cp7-JQ-RjO" customClass="PlayerViewController" customModule="Kendou" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CoW-c6-jUM">
+                <viewController storyboardIdentifier="View" id="cp7-JQ-RjO" customClass="PlayerViewController" customModule="Kendou" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CoW-c6-jUM" customClass="PlayerView2" customModule="Kendou" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4gb-aG-xWM" customClass="PlayerView2" customModule="Kendou" customModuleProvider="target">
-                                <rect key="frame" x="16" y="118" width="361" height="579"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4gb-aG-xWM" customClass="PlayerView" customModule="Kendou" customModuleProvider="target">
+                                <rect key="frame" x="16" y="130" width="361" height="567"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -198,19 +198,41 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="play" catalog="system"/>
+                                <connections>
+                                    <action selector="playerBthTappedWith_sender:" destination="cp7-JQ-RjO" eventType="touchUpInside" id="893-nz-5aM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okL-Rg-HmP">
                                 <rect key="frame" x="68" y="723" width="47" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="stop" catalog="system"/>
+                                <connections>
+                                    <action selector="pauseBthTappedWith_sender:" destination="cp7-JQ-RjO" eventType="touchUpInside" id="6Ta-3Y-NSd"/>
+                                </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="z2i-wp-N8Y">
                                 <rect key="frame" x="124" y="726" width="255" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderValueChangedWithSender:" destination="cp7-JQ-RjO" eventType="valueChanged" id="SoV-Vd-Rfm"/>
+                                </connections>
                             </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kyn-lF-CKq">
+                                <rect key="frame" x="304" y="42" width="59" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="save"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFg-Z5-UqJ">
+                                <rect key="frame" x="175" y="89" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPZ-gU-nBQ">
-                                <rect key="frame" x="34" y="82" width="50" height="35"/>
+                                <rect key="frame" x="30" y="42" width="50" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.backward.circle" catalog="system"/>
@@ -218,22 +240,19 @@
                                     <action selector="backButton:" destination="cp7-JQ-RjO" eventType="touchUpInside" id="Ggm-L0-0qp"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFg-Z5-UqJ">
-                                <rect key="frame" x="304" y="89" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qWw-iS-HPt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="3M9-Dg-bCt"/>
+                    <connections>
+                        <outlet property="playerview" destination="4gb-aG-xWM" id="BCG-tR-H6L"/>
+                        <outlet property="slider" destination="z2i-wp-N8Y" id="TIx-pz-afe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3hN-6W-ZpV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6804" y="918"/>
+            <point key="canvasLocation" x="6803.8167938931292" y="917.6056338028169"/>
         </scene>
         <!--List-->
         <scene sceneID="IlB-db-Ww8">
@@ -351,7 +370,7 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="793"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osa-yH-06m">
-                                <rect key="frame" x="30" y="48" width="50" height="35"/>
+                                <rect key="frame" x="34" y="40" width="50" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.backward.circle" catalog="system"/>
